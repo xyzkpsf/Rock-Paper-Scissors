@@ -15,11 +15,11 @@
     </header>
 
     <div class="level_option">
-        <button onclick="myFunction()" class="dropbtn">Computer Level</button>
-        <div id="level" class="dropdown_toggle">
-            <a href="#">Easy</a>
-            <a href="#">Expert</a>
-        </div>
+        <label id="level_choice">Choose computer Level</label>
+        <select class="level" id="level">
+            <option value="0">Easy</option>
+            <option value="1">Hard</option>
+        </select>
     </div>
 
     <div class="score_board">
@@ -47,19 +47,19 @@
     </div>
 
     <div class="display">
-        <h1 class="display_result">Ooops!</h1>
+        <h1 class="display_result" id="display">Are you ready?</h1>
     </div>
 
     <!-- how to show a choose result -->
-    <div class="choices">
-        <div class="choice" "result" id='user'>
-            <img src="image/rock.png" alt="">
+    <div class="choices" id="show_result">
+        <div class="choice" "result">
+            <img src="image/rock.png" alt="" id='user_choice'>
         </div>
-        <div class="choice" "result" id='computer'>
-            <img src="image/rock.png" alt="">
+        <div class="choice" "result">
+            <img src="image/rock.png" alt="" id='comp_choice'>
         </div>
     </div>
-
+    <script src="app.js" charset="utf-8"></script>
 </body>
 
 </html>
